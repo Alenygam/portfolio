@@ -20,8 +20,9 @@
 
     .hero-title {
         display: flex;
-        flex-direction: column;
         justify-content: center;
+        flex-direction: column;
+        text-align: right;
     }
 
     .hero-title > h1 {
@@ -46,13 +47,27 @@
 
     @media screen and (max-width: 920px) {
         .hero-container {
-            height: 800px;
+            height: 650px;
+            width: 100%;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 2fr;
         }
 
         .hero-title {
             text-align: center;
+        }
+
+        .hero-title > h1 {
+            font-size: 60px;
+        }
+
+        .hero-title > h2 {
+            font-size: 20px;
+        }
+
+        .hero-image > img {
+            width: 300px;
+            height: 300px;
         }
     }
 </style>
