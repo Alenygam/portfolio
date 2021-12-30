@@ -13,7 +13,7 @@
             title="SimpleWeather"
             description="Simple Weather app written in Flutter. Supports getting data from current GPS location."
             image="/img/Projects_SimpleWeather_picture.png"
-            route="/projects/spaggiu"
+            route="/projects/simpleweather"
         />
     </div>
 </template>
