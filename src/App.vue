@@ -1,5 +1,8 @@
 <template>
-  <router-view/>
+  <Navbar/>
+  <div class="container">
+    <router-view/>
+  </div>
 </template>
 
 <style>
@@ -71,4 +74,18 @@ input, select {
   height: 100%;
   color: #000;
 }
+
+.container {
+  padding: 50px 20px;
+  position: relative;
+}
 </style>
+
+<script>
+import Navbar from '@/components/Navbar.vue';
+
+export default {
+  name: 'App',
+  components: {Navbar}
+}
+</script>
