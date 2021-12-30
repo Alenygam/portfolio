@@ -16,6 +16,7 @@
         height: 600px;
         display: grid;
         grid-template-columns: 1fr 2fr;
+        margin-bottom: 100px;
     }
 
     .hero-title {

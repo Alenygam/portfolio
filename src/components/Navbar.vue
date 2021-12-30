@@ -52,7 +52,7 @@ export default {
         height: 40px;
         font-size: 18px;
         display: flex;
-        background-color: #9DB3AF40;
+        background-color: #fff;
         transition: .5s;
     }
 
