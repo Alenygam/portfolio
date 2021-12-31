@@ -5,7 +5,7 @@
                 {{title}}
             </h2>
         </div>
-        <img v-bind:src="image" v-bind:alt="title" width="300" height="300" class="project-image">
+        <img v-bind:src="image" v-bind:alt="title" width="280" height="280" class="project-image">
         <div class="project-description">
             {{description}}<br>
             <router-link v-bind:to="route">Read more</router-link>
@@ -27,7 +27,7 @@ export default {
 <style scoped>
     .project {
         min-height: 400px;
-        width: 300px;
+        width: 280px;
         padding: 20px;
         box-shadow: 0 0 10px #000;
         border-radius: 10px;

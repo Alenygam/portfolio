@@ -38,9 +38,10 @@ export default {
     .projects-container {
         display: flex;
         flex-wrap: nowrap;
-        padding: 40px;
+        margin: 40px;
         overflow: auto;
         justify-content: center;
+        width: 100%;
     }
 
     .projects-container > div {
@@ -50,7 +51,15 @@ export default {
 
     @media screen and (max-width: 840px) {
         .projects-container {
-            justify-content: flex-start;
+            flex-direction: column;
+            place-items: center;
+            margin: none;
+            overflow: hidden;
+            width: auto;
+        }
+
+        .projects-container > div {
+            flex: 0;
         }
     }
 </style>
