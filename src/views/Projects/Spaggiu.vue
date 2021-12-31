@@ -33,7 +33,7 @@
     <ProjectSection 
         title="Use it right now"
         img="/img/Spaggiu/Login.png"
-        desc="You can use the InDev version right now! Just visit https://spaggiu.alenygam.com"
+        desc="You can use the InDev version right now! Just visit <a href='https://spaggiu.alenygam.com'>https://spaggiu.alenygam.com</a>"
         dropShadow=true
     />
 </template>
@@ -55,5 +55,6 @@ export default {
     .container {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 </style>

@@ -3,8 +3,7 @@
         <div class="main-section">
             <h3>{{title}}</h3>
             <div class="description-container">
-                <p>
-                    {{desc}}
+                <p v-html="desc">
                 </p>
             </div>
         </div>
