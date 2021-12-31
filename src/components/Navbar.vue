@@ -2,6 +2,7 @@
     <div class="nav" id="nav">
         <router-link to="/">Home</router-link>
         <router-link to="/about_me">About Me</router-link>
+        <router-link to="/projects">Projects</router-link>
         <div style="flex-grow: 1;"></div>
     </div>
     <button id="menubutton" class="menubutton" type="button" v-on:click="openMenu">
