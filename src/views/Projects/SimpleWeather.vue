@@ -1,7 +1,7 @@
 <template>
     <ProjectTitle 
         title="Simple Weather" 
-        shortDesc="The simple application for the weather application."
+        shortDesc="The simple application for the weather"
     />
     <ProjectSection 
         title="Adaptable themes"
