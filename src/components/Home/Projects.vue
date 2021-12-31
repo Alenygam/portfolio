@@ -53,9 +53,9 @@ export default {
         .projects-container {
             flex-direction: column;
             place-items: center;
-            margin: none;
             overflow: hidden;
             width: auto;
+            margin: 0;
         }
 
         .projects-container > div {

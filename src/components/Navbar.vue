@@ -3,7 +3,8 @@
         <router-link to="/">Home</router-link>
         <router-link to="/about_me">About Me</router-link>
         <router-link to="/projects">Projects</router-link>
-        <div style="flex-grow: 1;"></div>
+        <div class="filler"></div>
+        <ContactMeButton/>
     </div>
     <button id="menubutton" class="menubutton" type="button" v-on:click="openMenu">
         <i class="ph-list" style="font-size: 32px"></i>
@@ -11,6 +12,8 @@
 </template>
 
 <script>
+import ContactMeButton from '@/components/common/ContactMeButton.vue'
+
 function openMenu() {
     const nav = document.getElementById('nav');
     const menubutton = document.getElementById('menubutton');
@@ -22,7 +25,8 @@ function openMenu() {
 export default {
     methods: {
         openMenu: openMenu,
-    }
+    },
+    components: {ContactMeButton}
 }
 </script>
 
@@ -57,8 +61,9 @@ export default {
         transition: .5s;
     }
 
+
     .nav * {
-        margin: auto 20px;
+        padding: 10px 20px;
         text-decoration: none;
     }
 
@@ -78,7 +83,7 @@ export default {
         .nav {
             /* Left needs to be -300px to account for the padding */
             left: -300px;
-            height: 100vh;
+            height: calc(100vh - 40px);
             width: 260px;
             flex-direction: column;
             text-align: center;
@@ -97,6 +102,22 @@ export default {
         .open-button {
             left: 310px;
         }
+
+        .contact-button {
+            margin-bottom: 50px;
+        }
+    }
+    
+    @media screen and (min-width: 500px) {
+        .contact-button {
+            margin: 3px 20px 3px 3px;
+        }
+    }
+    
+    .filler {
+        padding: 0;
+        margin: 0;
+        flex-grow: 1;
     }
 </style>
 

@@ -3,12 +3,21 @@
         <div class="hero-title">
             <h1>Alessandro Farcas</h1>
             <h2>Freelance Full-Stack developer</h2>
+            <ContactMeButton/>
         </div>
         <div class="hero-image">
             <img src="@/assets/Home_picture.png">
         </div>
     </div>
 </template>
+
+<script>
+import ContactMeButton from '@/components/common/ContactMeButton.vue'
+
+export default {
+    components: {ContactMeButton}
+}
+</script>
 
 <style scoped>
     .hero-container {
@@ -23,6 +32,7 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+        place-items: center;
         text-align: right;
     }
 
@@ -44,6 +54,16 @@
         width: 450px;
         height: 450px;
         border-radius: 10px;
+    }
+
+    .contact-button {
+        margin-top: 20px;
+    }
+
+    @media screen and (min-width: 920px) {
+        .hero-title {
+            place-items: flex-end;
+        }
     }
 
     @media screen and (max-width: 920px) {
