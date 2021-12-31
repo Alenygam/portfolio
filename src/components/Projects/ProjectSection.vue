@@ -3,12 +3,12 @@
         <div class="main-section">
             <h3>{{title}}</h3>
             <div class="description-container">
-                <p v-html="desc">
-                </p>
+                <div v-html="desc">
+                </div>
             </div>
         </div>
         <div style="display: flex; align-items: center; justify-content: center;">
-            <img v-bind:src="img" v-bind:alt="title" height="500">
+            <img v-bind:src="img" v-bind:alt="title" v-bind:height="customImgHeight ? customImgHeight : 500">
         </div>
     </div>
 </template>
@@ -19,7 +19,8 @@ export default {
         dropShadow: Boolean,
         title: String,
         desc: String,
-        img: String
+        img: String,
+        customImgHeight: Number
     }
 }
 </script>

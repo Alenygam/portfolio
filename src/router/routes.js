@@ -11,8 +11,13 @@ const routes = [
   },
   {
     path: '/projects/spaggiu',
-    name: 'About Me',
+    name: 'Spaggiu',
     component: () => import('../views/Projects/Spaggiu.vue')
+  },
+  {
+    path: '/projects/simpleweather',
+    name: 'Simple Weather',
+    component: () => import('../views/Projects/SimpleWeather.vue')
   }
 ]
 
